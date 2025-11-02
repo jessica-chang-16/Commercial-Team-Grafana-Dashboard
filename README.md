@@ -1,6 +1,9 @@
 # Commercial-Team-Grafana-Dashboard
 A real-time monitoring dashboard built to replace a deprecated internal tool used by the Commercial team (Customer Success, Sales, Analysts) to analyze and validate retailer coverage and crawler performance.
 
+![Grafana Dashboard Img 1](redacted-ct-dashboard-img1.png)
+![Grafana Dashboard Img 1](redacted-ct-dashboard-img2.png)
+
 ### Background:
 This project began as a self-driven exploration of Grafana and evolved into a fully-owned initiative to provide internal teams with fast, reliable access to crawler and retail coverage insights.The dashboard delivers real-time visibility into product assortment coverage, data freshness, retailer counts, and regional tracking — supporting customer calls, demos, and strategic analysis.
 
