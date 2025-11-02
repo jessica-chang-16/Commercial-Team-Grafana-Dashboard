@@ -1,0 +1,15 @@
+> Count of Crawlers per Region
+```
+WITH last_retailer_timestamp AS 
+  (SELECT max(timestamp) as timestamp, 
+  retailer_id 
+  from clickhouse_data_table_01 
+  GROUP BY retailer_id
+)
+SELECT region, uniq(retailer_id) AS crawlers_per_region
+FROM clickhouse_data_table_01  FINAL
+INNER JOIN last_retailer_timestamp USING (timestamp, retailer)
+WHERE $__timeFilter(timestamp)
+GROUP BY region
+ORDER BY crawlers_per_region DESC;
+```
