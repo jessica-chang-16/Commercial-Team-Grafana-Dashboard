@@ -1,5 +1,32 @@
 # Commercial-Team-Grafana-Dashboard
-Created a Grafana Dashboard to replace an internal monitoring tool used by the commercial teams (Customer Success / Sales / Analysts )
+A real-time monitoring dashboard built to replace a deprecated internal tool used by the Commercial team (Customer Success, Sales, Analysts) to analyze and validate retailer coverage and crawler performance.
 
 ### Background:
-This project started out with myself playing around in Grafana (the company's monitoring platform) to learn more about it and try my hand at some visualizations of our data trackers. Upon showing the couple panels that I created to my manager, it became an adhoc project that I was solely responsible for in the creation of a working real-time monitoring dashboard for our commercial team. The purpose of this dashboard is to replace for an internal tool that is now deprecated. 
+This project began as a self-driven exploration of Grafana and evolved into a fully-owned initiative to provide internal teams with fast, reliable access to crawler and retail coverage insights.The dashboard delivers real-time visibility into product assortment coverage, data freshness, retailer counts, and regional tracking — supporting customer calls, demos, and strategic analysis.
+
+### Business Objective:
+Empower commercial teams with real-time crawler insight to quickly assess data freshness, coverage, and performance across 4,000+ crawlers, replacing a legacy internal tool and improving readiness for customer conversations and demos.
+
+### Business Questions:
+- Are we capturing the full product assortment?
+- How fresh and complete is the crawler data that we are capturing?
+- How many retailers are we currently tracking across the different markets?
+- Which regions have the highest concentration of tracked retailers?
+- How many geographic regions are we actively monitoring?
+
+### Tech Stack:
+- Grafana (visualization)
+- ClickHouse (analytics database / data warehouse)
+- SQL (CTEs, joins, aggregation, data modeling)
+
+### Data Work:
+- Explored ClickHouse tables to identify relevant data sources.
+- Developed SQL queries with CTEs, joins, aggregates, and aliases to generate actionable metrics.
+- Modeled raw data into retailer counts, data freshness, and regional coverage for Grafana dashboards.
+- Validated outputs against business expectations and legacy tools.
+
+### Result:
+- Delivered a fully-functional dashboard adopted by Commercial teams
+- Automated real-time insights for 4,000+ crawlers across global retailers
+- Replaced deprecated internal monitoring tool
+- Improved efficiency & visibility for customer-facing workflows
