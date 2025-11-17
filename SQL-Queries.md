@@ -59,7 +59,7 @@ LIMIT 5
 > Average Percent of Products Scraped
 ```
 SELECT retailer_id,
-        priority,
+        number_rank,
         avg(
           if(
         isNaN(
